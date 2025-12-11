@@ -59,6 +59,7 @@ class Config(SanicConfig):
         oas_ignore_options: bool = True,
         oas_path_to_redoc_html: Optional[str] = None,
         oas_path_to_swagger_html: Optional[str] = None,
+        oas_path_to_scalar_html: Optional[str] = None,
         oas_ui_default: Optional[str] = "redoc",
         oas_ui_redoc: bool = True,
         oas_ui_redoc_html_title: str = "ReDoc",
@@ -123,6 +124,7 @@ class Config(SanicConfig):
         self.OAS_IGNORE_OPTIONS = oas_ignore_options
         self.OAS_PATH_TO_REDOC_HTML = oas_path_to_redoc_html
         self.OAS_PATH_TO_SWAGGER_HTML = oas_path_to_swagger_html
+        self.OAS_PATH_TO_SCALAR_HTML = oas_path_to_scalar_html
         self.OAS_UI_DEFAULT = oas_ui_default
         self.OAS_UI_REDOC = oas_ui_redoc
         self.OAS_UI_REDOC_HTML_TITLE = oas_ui_redoc_html_title
