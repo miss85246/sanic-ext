@@ -84,6 +84,7 @@ def blueprint_factory(config: Config):
                     .replace("__HTML_TITLE__", html_title)
                     .replace("__HTML_CUSTOM_CSS__", custom_css)
                     .replace("__CDN_URL__", cdn_url)
+                    .replace("__HTML_THEME__",config.OAS_UI_SCALAR_THEME)
                 )
 
             bp.add_route(
