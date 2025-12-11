@@ -70,6 +70,10 @@ class Config(SanicConfig):
         oas_ui_swagger_version: str = "4.10.3",
         oas_ui_swagger_cdn_url: str = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui",
         oas_ui_swagger_oauth2_redirect: str = "/oauth2-redirect.html",
+        oas_ui_scalar: bool = True,
+        oas_ui_scalar_html_title: str = "Scalar API",
+        oas_ui_scalar_custom_css: str = "",
+        oas_ui_scalar_theme: str = "mars",
         oas_uri_to_config: str = "/swagger-config",
         oas_uri_to_json: str = "/openapi.json",
         oas_uri_to_redoc: str = "/redoc",
@@ -130,6 +134,10 @@ class Config(SanicConfig):
         self.OAS_UI_SWAGGER_VERSION = oas_ui_swagger_version
         self.OAS_UI_SWAGGER_CDN_URL = oas_ui_swagger_cdn_url
         self.OAS_UI_SWAGGER_OAUTH2_REDIRECT = oas_ui_swagger_oauth2_redirect
+        self.OAS_UI_SCALAR = oas_ui_scalar
+        self.OAS_UI_SCALAR_HTML_TITLE = oas_ui_scalar_html_title
+        self.OAS_UI_SCALAR_CUSTOM_CSS = oas_ui_scalar_custom_css
+        self.OAS_UI_SCALAR_THEME = oas_ui_scalar_theme
         self.OAS_URI_TO_CONFIG = oas_uri_to_config
         self.OAS_URI_TO_JSON = oas_uri_to_json
         self.OAS_URI_TO_REDOC = oas_uri_to_redoc
