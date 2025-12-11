@@ -77,6 +77,7 @@ class Config(SanicConfig):
         oas_uri_to_json: str = "/openapi.json",
         oas_uri_to_redoc: str = "/redoc",
         oas_uri_to_swagger: str = "/swagger",
+        oas_uri_to_scalar: str = "/scalar",
         oas_url_prefix: str = "/docs",
         swagger_ui_configuration: Optional[dict[str, Any]] = None,
         templating_path_to_templates: Union[
@@ -140,6 +141,7 @@ class Config(SanicConfig):
         self.OAS_URI_TO_JSON = oas_uri_to_json
         self.OAS_URI_TO_REDOC = oas_uri_to_redoc
         self.OAS_URI_TO_SWAGGER = oas_uri_to_swagger
+        self.OAS_URI_TO_SCALAR = oas_uri_to_scalar
         self.OAS_URL_PREFIX = oas_url_prefix
         self.SWAGGER_UI_CONFIGURATION = swagger_ui_configuration or {
             "apisSorter": "alpha",
